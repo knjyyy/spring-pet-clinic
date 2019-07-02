@@ -5,11 +5,11 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.6.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.springframework</groupId>
 	<artifactId>spring-pet-clinic</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-pet-clinic</name>
 	<packaging>pom</packaging>
 	<description>Demo project for Spring Boot</description>
@@ -44,8 +44,7 @@
 	
 	<scm>
 		<developerConnection>scm:git:git@github.com:knjyyy/spring-pet-clinic.git</developerConnection>
-	  <tag>spring-pet-clinic-0.0.1</tag>
-  </scm>
+	</scm>
 
   <modules>
     <module>pet-clinic-data</module>
