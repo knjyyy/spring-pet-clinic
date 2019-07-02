@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.springframework</groupId>
 		<artifactId>spring-pet-clinic</artifactId>
-		<version>0.0.2</version>
+		<version>0.0.3-SNAPSHOT</version>
 	</parent>
 	<artifactId>pet-clinic-web</artifactId>
 	<name>pet-clinic-web</name>
@@ -17,7 +17,7 @@
 		<dependency>
 			<groupId>com.springframework</groupId>
 			<artifactId>pet-clinic-data</artifactId>
-			<version>0.0.2</version>
+			<version>0.0.3-SNAPSHOT</version>
 		</dependency>
 	
 		<dependency>
