@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.springframework</groupId>
 	<artifactId>spring-pet-clinic</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>spring-pet-clinic</name>
 	<packaging>pom</packaging>
 	<description>Demo project for Spring Boot</description>
@@ -32,6 +32,7 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
 					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
 					
 				    <checkModificationExcludes>
 				        <checkModificationExclude>pom.xml</checkModificationExclude>
@@ -44,7 +45,7 @@
 	
 	<scm>
 		<developerConnection>scm:git:git@github.com:knjyyy/spring-pet-clinic.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>spring-pet-clinic-0.0.2</tag>
   </scm>
 
   <modules>
