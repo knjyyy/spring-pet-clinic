@@ -4,9 +4,12 @@ import java.util.Set;
 
 import javax.persistence.Id;
 
+import org.springframework.stereotype.Service;
+
 import com.springframework.springpetclinic.model.Vet;
 import com.springframework.springpetclinic.services.VetService;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
 	@Override
