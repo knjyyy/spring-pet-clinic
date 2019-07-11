@@ -17,12 +17,10 @@ public class DataLoader implements CommandLineRunner {
 
 	public final OwnerService ownerService;
 	public final VetService vetService;
-	public final PetService petService;
 	
-	public DataLoader() { 
-		ownerService = new OwnerServiceMap();
-		vetService = new VetServiceMap();
-		petService = new PetServiceMap();
+	public DataLoader(OwnerService ownerService, VetService vetService) {
+		this.ownerService = ownerService;
+		this.vetService = vetService;
 	}
 	
 	@Override
