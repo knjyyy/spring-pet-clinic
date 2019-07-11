@@ -4,10 +4,13 @@ import java.util.Set;
 
 import javax.persistence.Id;
 
+import org.springframework.stereotype.Service;
+
 import com.springframework.springpetclinic.model.Owner;
 import com.springframework.springpetclinic.services.CrudService;
 import com.springframework.springpetclinic.services.OwnerService;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
 	@Override
