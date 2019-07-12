@@ -7,6 +7,8 @@ import java.util.Set;
 
 import javax.persistence.Id;
 
+import com.springframework.springpetclinic.model.BaseEntity;
+
 public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
 
 	protected Map<Long, T> map = new HashMap<>();
