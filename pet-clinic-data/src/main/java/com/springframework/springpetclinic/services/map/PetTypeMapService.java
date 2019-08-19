@@ -6,32 +6,32 @@ import javax.persistence.Id;
 
 import org.springframework.stereotype.Service;
 
-import com.springframework.springpetclinic.model.Pet;
-import com.springframework.springpetclinic.services.PetService;
+import com.springframework.springpetclinic.model.PetType;
+import com.springframework.springpetclinic.services.PetTypeService;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
+public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService  {
 
 	@Override
-	public Set<Pet> findall() {
+	public Set<PetType> findall() {
 		// TODO Auto-generated method stub
 		return super.findAll();
 	}
 
 	@Override
-	public Pet findById(Long id) {
+	public PetType findById(Long id) {
 		// TODO Auto-generated method stub
 		return super.findById(id);
 	}
 
 	@Override
-	public Pet save(Pet object) {
+	public PetType save(PetType object) {
 		// TODO Auto-generated method stub
 		return super.save(object);
 	}
 
 	@Override
-	public void delete(Pet object) {
+	public void delete(PetType object) {
 		// TODO Auto-generated method stub
 		super.delete(object);
 	}

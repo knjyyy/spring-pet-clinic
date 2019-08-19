@@ -7,11 +7,11 @@ import javax.persistence.Id;
 public interface CrudService<T, ID> {
 	Set<T> findall();
 
-	T findById(Id id);
+	T findById(Long id);
 
 	T save(T object);
 
 	void delete(T object);
 
-	void deleteById(Id id);
+	void deleteById(Long id);
 }

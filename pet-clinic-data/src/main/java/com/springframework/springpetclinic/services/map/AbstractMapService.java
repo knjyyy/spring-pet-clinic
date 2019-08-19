@@ -19,7 +19,7 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
 		return new HashSet<>(map.values());
 	}
 
-	T findById(Id id) {
+	T findById(Long id) {
 		return map.get(id);
 	}
 
@@ -38,7 +38,7 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
 		return object;
 	}
 
-	void deleteById(Id id) {
+	void deleteById(Long id) {
 
 		map.remove(id);
 	}

@@ -18,7 +18,7 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
 	}
 
 	@Override
-	public Vet findById(Id id) {
+	public Vet findById(Long id) {
 		return super.findById(id);
 	}
 
@@ -33,7 +33,7 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
 	}
 
 	@Override
-	public void deleteById(Id id) {
+	public void deleteById(Long id) {
 		super.deleteById(id);
 	}
 
