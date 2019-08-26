@@ -14,31 +14,26 @@ public class PetTypeMapService extends AbstractMapService<PetType, Long> impleme
 
 	@Override
 	public Set<PetType> findall() {
-		// TODO Auto-generated method stub
 		return super.findAll();
 	}
 
 	@Override
 	public PetType findById(Long id) {
-		// TODO Auto-generated method stub
 		return super.findById(id);
 	}
 
 	@Override
 	public PetType save(PetType object) {
-		// TODO Auto-generated method stub
 		return super.save(object);
 	}
 
 	@Override
 	public void delete(PetType object) {
-		// TODO Auto-generated method stub
 		super.delete(object);
 	}
 
 	@Override
 	public void deleteById(Long id) {
-		// TODO Auto-generated method stub
 		super.deleteById(id);
 	}
 
