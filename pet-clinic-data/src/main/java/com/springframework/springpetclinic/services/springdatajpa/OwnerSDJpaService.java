@@ -9,12 +9,13 @@ import org.springframework.stereotype.Service;
 
 import com.springframework.springpetclinic.model.Owner;
 import com.springframework.springpetclinic.repositories.OwnerRepository;
+import com.springframework.springpetclinic.repositories.PetRepository;
 import com.springframework.springpetclinic.repositories.PetTypeRepository;
 import com.springframework.springpetclinic.services.OwnerService;
 
 @Service
 @Profile("springdatajpa")
-public class OwnerSDJpaService<PetRepository> implements OwnerService{
+public class OwnerSDJpaService implements OwnerService{
 	private final OwnerRepository ownerRepository;
 	private final PetRepository petRepository;
 	private final PetTypeRepository petTypeRepository;
