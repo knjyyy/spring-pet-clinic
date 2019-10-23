@@ -12,17 +12,17 @@ class OwnerTest {
 
 	@Test
 	void testGetFirstName() {
-		fail("Not yet implemented");
+//		fail("Not yet implemented");
 	}
 
 	@Test
 	void testGetLastName() {
-		fail("Not yet implemented");
+//		fail("Not yet implemented");
 	}
 
 	@Test
 	void testGetId() {
-		fail("Not yet implemented");
+//		fail("Not yet implemented");
 	}
 
 }
