@@ -19,9 +19,8 @@ import lombok.Setter;
 @Table(name = "owners")
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
 @Builder
+@NoArgsConstructor
 public class Owner extends Person {
 
 	@Column(name = "address")
