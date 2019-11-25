@@ -1,5 +1,7 @@
 package com.springframework.springpetclinic.services.map;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Id;
@@ -85,6 +87,11 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
 				.filter(owner -> owner.getLastName().equalsIgnoreCase(lastName))
 				.findFirst()
 				.orElse(null);
+	}
+
+	@Override
+	public List<Owner> findByLastNameLike(String lastName) {
+		return null;
 	}
 
 }
