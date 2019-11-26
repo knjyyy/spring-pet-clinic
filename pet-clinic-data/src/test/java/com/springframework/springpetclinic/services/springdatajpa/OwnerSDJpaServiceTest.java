@@ -60,7 +60,7 @@ class OwnerSDJpaServiceTest {
 
 		when(ownerRepository.findAll()).thenReturn(ownersMock);
 
-		Set<Owner> owners = service.findall();
+		Set<Owner> owners = service.findAll();
 
 		assertNotNull(owners);
 		assertEquals(size, owners.size());

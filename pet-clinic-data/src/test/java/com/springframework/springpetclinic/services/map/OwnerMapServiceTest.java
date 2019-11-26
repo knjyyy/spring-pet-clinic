@@ -35,12 +35,12 @@ class OwnerMapServiceTest {
 	void testDeleteById() {
 		ownerMapService.deleteById(id1);
 		size--;
-		assertEquals(size, ownerMapService.findall().size());
+		assertEquals(size, ownerMapService.findAll().size());
 	}
 
 	@Test
 	void testFindall() {
-		Set<Owner> owners = ownerMapService.findall();
+		Set<Owner> owners = ownerMapService.findAll();
 		assertEquals(size, (long) owners.size());
 	}
 
@@ -69,7 +69,7 @@ class OwnerMapServiceTest {
 	@Test
 	void testDeleteOwner() {
 		ownerMapService.deleteById(id1);
-		assertEquals(0, ownerMapService.findall().size());
+		assertEquals(0, ownerMapService.findAll().size());
 	}
 
 	@Test

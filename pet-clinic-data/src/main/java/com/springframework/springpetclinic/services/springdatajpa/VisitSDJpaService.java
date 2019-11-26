@@ -20,7 +20,7 @@ public class VisitSDJpaService implements VisitService{
 		this.visitRepository = visitRepository;
 	}
 	@Override
-	public Set<Visit> findall() {
+	public Set<Visit> findAll() {
 		Set<Visit> visits = new HashSet<>();
 		visitRepository.findAll().forEach(visits::add);
 		return visits;

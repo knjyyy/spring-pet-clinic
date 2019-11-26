@@ -14,7 +14,7 @@ import com.springframework.springpetclinic.model.Visit;
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
 	@Override
-	public Set<Visit> findall() {
+	public Set<Visit> findAll() {
 		return super.findAll();
 	}
 

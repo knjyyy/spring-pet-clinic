@@ -5,7 +5,7 @@ import java.util.Set;
 import javax.persistence.Id;
 
 public interface CrudService<T, ID> {
-	Set<T> findall();
+	Set<T> findAll();
 
 	T findById(Long id);
 
