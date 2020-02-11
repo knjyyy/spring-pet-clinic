@@ -67,6 +67,20 @@ class OwnerControllerTest {
 			.andExpect(view().name("owners/ownerDetails"))
 			.andExpect(model().attribute("owner", hasProperty("id", is(1L))));
 	}
+	
+	@Test
+	public void testProcessFindFormEmptyReturnMany() throws Exception {
+		when(service.findByLastNameLike(anyString()))
+			.thenReturn(Arrays.asList(
+					Owner.builder().id(1L).build(), 
+					Owner.builder().id(2l).build()));
+				
+		mockMvc.perform(get("/owners")
+				.param("lastName", ""))
+			.andExpect(status().isOk())
+			.andExpect(view().name("owners/ownersList"))
+			.andExpect(model().attribute("selections", hasSize(2)));
+	}
 
 	@Test
 	public void testFindFormReturnOne() throws Exception {
