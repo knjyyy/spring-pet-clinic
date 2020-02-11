@@ -78,15 +78,8 @@
 						<goals>
 							<goal>repackage</goal>
 						</goals>
-						<configuration>
-							<skip>true</skip>
-						</configuration>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.22.0</version>
 			</plugin>
 		</plugins>
 	</build>
